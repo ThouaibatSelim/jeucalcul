@@ -1,3 +1,33 @@
 body { 
     background-color: rgb(189, 83, 83);
+    font-family: Cabin;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(236, 210, 210)
+}
+
+h3 {
+    color: blanchedalmond;
+}
+
+fieldset {
+    margin-right: 70%;
+    border:rgb(192, 119, 119) solid 1px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: antiquewhite;
+}
+
+.age {
+    color: blanchedalmond;
+}
+
+#age1 {
+    border: solid 1px;
+    margin-right: 1px;
 }
