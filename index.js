@@ -18,30 +18,48 @@ let currentYear = 2024;
 let birthYear = 2002;
 
 function diff (currentYear, birthYear) {
-    let reduction = currentYear - birthYear
-    return reduction
+    let reduction = currentYear - birthYear;
+    console.log(reduction);
+    return reduction;
 };
 
-let reduction = (2024 - 2002);
-
-//Affichage
-console.log (reduction);
 
 //DOM
 
-let elementName = document.querySelector ("#n1");
-elementName.setAttribute ("value", "SELIM")
+// elementName.setAttribute ("value", "SELIM")
 
-let elementPrenom = document.querySelector ("#n2");
-elementPrenom.setAttribute ("value", "Thouaïbat")
+// let elementPrenom = document.querySelector ("#n2");
+// elementPrenom.setAttribute ("value", "Thouaïbat")
 
-let elementAge = document.querySelector ("#age1");
-elementAge.setAttribute ("value", 22);
+// let elementAge = document.querySelector ("#age1");
+// elementAge.setAttribute ("value", 22);
 
 let elementYear = document.querySelector ("#year");
-elementYear.setAttribute ("value", "2002");
 
 
+
+// elementYear.setAttribute ("value", "2002");
+
+let elementValider = document.querySelector ("#bouton") ;
+console.log (elementValider);
+
+elementValider.addEventListener ("click", () => {
+    console.log("Vous avez cliqué sur le bouton Valider.");
+    let elementBirthyear = elementYear.value;
+
+    
+    // let anneeSaisie = elementBirthyear.value;
+    console.log ("Année saisie:", elementBirthyear);
+    
+    diff (2024, elementBirthyear);
+    
+    let elementNom = document.querySelector ("#n1")
+    console.log ("Nom saisi:", elementNomdef);
+    let elementNomdef = elementNom.value;
+    
+})
+
+   
 
 
 

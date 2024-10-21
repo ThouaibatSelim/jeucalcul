@@ -11,20 +11,30 @@ h1 {
 
 h3 {
     color: blanchedalmond;
+    text-align: center;
 }
 
 fieldset {
     margin-right: 70%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border:rgb(192, 119, 119) solid 1px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: antiquewhite;
+    background-color: antiquewhite; 
+    
+}
+
+div {
+    width: 100%;
+    margin:auto;
+    align-items: center;
 }
 
 .age {
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
 }
 
 #age1 {
@@ -32,6 +42,10 @@ fieldset {
     margin-right: 1px;
 }
 
-.ca {
+#bouton{
     font-family: Cabin;
 }
+
+.yr {
+    font-family: Cabin;
+} 

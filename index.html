@@ -15,9 +15,10 @@
     <h1>Bienvenue</h1>
 
     <h3>Calculez votre âge:</h3>
-
-    <form>
+    <br><br><br><br><br>
+ <form>
         
+    <div>
         <fieldset>
             
             <label for="name"> Entrez votre nom
@@ -32,39 +33,34 @@
         
 <br> <br>
     
-
-<label for="situation"> Quel est votre situation professionelle? <br>
-    <input name="situation"  type="radio" checked id="Etudiant"> Etudiant 
+        <label for="situation"> Quelle est votre situation professionelle? <br>
+         <input name="situation"  type="radio" checked id="Etudiant"> Etudiant(e)
     <br>
-            <input name="situation"  type="radio"> Salarié
-        </label>
+            <input name="situation"  type="radio"> Salarié(e)
+            </label>
         
         <br> <br>
     
         <label for="number"></label> Quelle est votre année de naissance?
-        <input type="number" min="1900" max="2024" step="1" id="year" >
-    </fieldset>
+        <input type="number" min="1900" max="2024" step="1" id="year" class="yr" >
+   
     
-    <br>
-
-    <label for="submit"></label>
-    <input type="submit" value="Calculer votre âge" class="ca">
     <br> <br>
-    <label for="age" class="age"> Vous êtes âgé(e) de
+
+      <button id="bouton"> Valider</button>
+    <br> <br> <br>
+        <label for="age" class="age"> Vous êtes âgé(e) de
         <input type="age" id="age1"> ans.
-    </label>
+        </label>
+
+
+ </fieldset>
 </form>
+</div>
 
 </body>
-<!-- <script type="text/javascript" src="main.js"></script> -->
-<!-- <script type="text/javascript" src="operateur.js"></script> -->
-<!-- <script type="text/javascript" src="fonction.js"></script> -->
-<!-- <script type="text/javascript" src="typevariables.js"></script> -->
-<!-- <script type="text/javascript" src="conditions.js"></script> -->
-<!-- <script type="text/javascript" src="tableaux.js"></script> -->
-<!-- <script type="text/javascript" src="exercice.js"></script> -->
-<!-- <script type="text/javascript" src="dom.js"></script> -->
-<script type="text/javascript" src="index.js"></script>
+
+<script type="text/javascript" src="index.js" defer></script>
 
 
 </html>
