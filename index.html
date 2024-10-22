@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+    <script type="text/javascript" src="index.js" defer></script>
 
     <h1>Bienvenue</h1>
 
     <h3>Calculez votre âge:</h3>
-    <br><br><br><br><br>
- <form>
-        
-    <div>
+    <br><br>
+
+    <form>
+       <div class="formu">
         <fieldset>
             
             <label for="name"> Entrez votre nom
-                <input type="name" placeholder="Nom" id="n1">
+                <input type="name" placeholder="Nom" id="n1" required>
             </label>  
             
             <br>
             <label for="name"></label> Entrez votre prénom
-            <input type="name" placeholder="Prénom" id="n2">
+            <input type="name" placeholder="Prénom" id="prenom" required>
         </label>
         
         
 <br> <br>
     
         <label for="situation"> Quelle est votre situation professionelle? <br>
-         <input name="situation"  type="radio" checked id="Etudiant"> Etudiant(e)
+ 
+         <input name="situation"  type="radio" id="sp" class="sp" value="etudiant" required>Etudiant(e)
     <br>
-            <input name="situation"  type="radio"> Salarié(e)
-            </label>
+            <input name="situation" type="radio" class="sp" value="salarie" required> Salarié(e)
+        </label>
         
         <br> <br>
     
         <label for="number"></label> Quelle est votre année de naissance?
-        <input type="number" min="1900" max="2024" step="1" id="year" class="yr" >
+        <input type="number" min="1900" max="2024" step="1" id="year" class="yr" required>
    
     
     <br> <br>
 
-      <button id="bouton"> Valider</button>
-    <br> <br> <br>
-        <label for="age" class="age"> Vous êtes âgé(e) de
-        <input type="age" id="age1"> ans.
-        </label>
+      <button id="bouton" required> Valider</button>
+    <br>
 
+        <p><span id="messageage"></span></p>
 
- </fieldset>
+ </fieldset> </div>
 </form>
-</div>
 
 </body>
-
-<script type="text/javascript" src="index.js" defer></script>
 
 
 </html>
