@@ -77,8 +77,18 @@ elementValider.addEventListener ("click", () => {
         console.log (elementPro[i].value);
         checked = elementPro[i].value;
         break
-    } 
-}
+    };
+};
 
 elementSpan.innerHTML += ` et vous êtes ${checked}.`;
 });
+
+//Année
+const date = new Date() ;
+const elementDate = document.querySelector ("#currentyear");
+elementDate.innerHTML += `Tous droits réservés ${date.getFullYear()} © `;
+
+// console.log("date:", date);
+// console.log("année:", date.getFullYear());
+
+

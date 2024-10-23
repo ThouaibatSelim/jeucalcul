@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="index.js" defer></script>
         
     </head>
+    <!-- Body -->
     <body>
-    <script type="text/javascript" src="index.js" defer></script>
+        <header>
+            <div class="bodycolor">
 
-    <h1>Bienvenue</h1>
-
-    <h3>Calculez votre âge:</h3>
-    <br><br>
-
-    <form>
-       <div class="formu">
-        <fieldset>
-            
-            <label for="name"> Entrez votre nom
-                <input type="name" placeholder="Nom" id="n1" required>
-            </label>  
-            
-            <br>
-            <label for="name"></label> Entrez votre prénom
-            <input type="name" placeholder="Prénom" id="prenom" required>
-        </label>
+                <div class="b1">
+                    <!-- Header -->
         
-        
-<br> <br>
-    
-        <label for="situation"> Quelle est votre situation professionelle? <br>
- 
-         <input name="situation"  type="radio" id="sp" class="sp" value="etudiant" required>Etudiant(e)
-    <br>
-            <input name="situation" type="radio" class="sp" value="salarie" required> Salarié(e)
-        </label>
-        
-        <br> <br>
-    
-        <label for="number"></label> Quelle est votre année de naissance?
-        <input type="number" min="1900" max="2024" step="1" id="year" class="yr" required>
-   
-    
-    <br> <br>
+                    <br> <br>
+                        <h1>Jeu de calcul automatique de l'âge</h1>
+                        <br> <br>
+                </div>
 
-      <button id="bouton" required> Valider</button>
-    <br>
+                        <h2>L’application la plus fiable pour connaître votre âge</h2>
+                        <br>
+                        <h3>Vous serez heureux d’apprendre votre âge.</h3>
+                        <br><br>
+            </div>
+        </header> 
 
-        <p><span id="messageage"></span></p>
+                    <!-- Main page -->
+    <main>
+        <div class="personne"> 
+            <p class="np">Veuillez saisir votre nom et votre prénom:</p>
+  
+                    <!-- Formulaire  -->
+        <form>  
+            <div class="identite"> 
+                <fieldset>
+                <div class="formu">
+                    <!-- Nom et prénom -->
+                    <label for="name"> Entrez votre nom:
+                    <input type="name" placeholder="Nom" id="n1" required>
+                    </label>  
+                    <br><br>
+                    <label for="name"></label> Entrez votre prénom:
+                    <input type="name" placeholder="Prénom" id="prenom" required>
+                    </label></div>
 
- </fieldset> </div>
-</form>
+                    <br> <br>
+                    <!--Année de naissance  -->
+                <div class="anneeNaissance">
+                    <label for="number"></label> Quelle est votre année de naissance?
+                    <input type="number" min="1900" max="2024" step="1" id="year" class="yr"required>
+                </div>
+                 <br> <br>
+                 
+                 <!-- Situation professionelle -->
+                     <label for="situation"> Quelle est votre situation professionelle? 
+                    <br>
+                    <input name="situation"  type="radio" id="sp" class="sp" value="etudiant" required>Etudiant(e)
+                    <br>
+                    <input name="situation" type="radio" class="sp" value="salarie" required> Salarié(e)
+                     </label>
+                
+                <br> <br> <br>
+                <!--Bouton  -->
+                <div class="boutonValider">
+                    <button id="bouton" required> Valider</button>
+                </div>
+                <br>
+                
+                <!-- Message -->
+                <div class="messageAffiche">
+                    <p><span id="messageage"></span></p>
+                </div>
 
+            </div> <!-- div personne -->
+
+        </fieldset>
+
+        <br> <br> <br>
+    </div>
+                </form>
+
+        </main> <br> <br>
 </body>
-
-
+                    <!-- Footer  -->
+            <div class="ft">
+                <footer>
+            <p>Le site est développé par Thouaïbat Sélim dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et 
+            <a href="https://www.intercariforef.org/carif-oref/carif-oref-mayotte" target="_blank"> CARIF-OREF 976.</a>
+            <br> <br> <br>
+             <span id="currentyear"></span></p>
+            <!-- Tous droits réservés -->
+    </footer>
+            </div>
 </html>
