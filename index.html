@@ -9,7 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="index.js" defer></script>
+        <!-- <script type="text/javascript" src="index.js" defer></script>
+        <script type="text/javascript" src="event.js" defer></script> -->
+        <script type="text/javascript" src="reglevalidation.js" defer></script>
         
     </head>
     <!-- Body -->
@@ -34,22 +36,23 @@
 
                     <!-- Main page -->
     <main>
-        <div class="personne"> 
-            <p class="np">Veuillez saisir votre nom et votre prénom:</p>
-  
+                <div class="personne"><p>Veuillez saisir votre nom et votre prénom: </p>
+                </div>
+
                     <!-- Formulaire  -->
         <form>  
             <div class="identite"> 
                 <fieldset>
-                <div class="formu">
+                    <div class="formu">
                     <!-- Nom et prénom -->
-                    <label for="name"> Entrez votre nom:
-                    <input type="name" placeholder="Nom" id="n1" required>
-                    </label>  
-                    <br><br>
-                    <label for="name"></label> Entrez votre prénom:
-                    <input type="name" placeholder="Prénom" id="prenom" required>
-                    </label></div>
+                        <label for="name"> Entrez votre nom:
+                        <input type="name" placeholder="Nom" id="n1" required>
+                        </label>  
+                        <br><br>
+                        <label for="name"></label> Entrez votre prénom:
+                        <input type="name" placeholder="Prénom" id="prenom" required>
+                        </label>
+                    </div>
 
                     <br> <br>
                     <!--Année de naissance  -->
@@ -77,6 +80,9 @@
                 <!-- Message -->
                 <div class="messageAffiche">
                     <p><span id="messageage"></span></p>
+                    <p><span id="messageBonj"></span></p>
+                    <p><span id="jour"></span></p>
+                    <!-- <p><span id="soir"></span></p> -->
                 </div>
 
             </div> <!-- div personne -->
@@ -91,11 +97,11 @@
 </body>
                     <!-- Footer  -->
             <div class="ft">
-                <footer>
-            <p>Le site est développé par Thouaïbat Sélim dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et 
-            <a href="https://www.intercariforef.org/carif-oref/carif-oref-mayotte" target="_blank"> CARIF-OREF 976.</a>
-            <br> <br> <br>
-             <span id="currentyear"></span></p>
+    <footer>
+                <p>Le site est développé par Thouaïbat Sélim dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et 
+                    <a href="https://www.intercariforef.org/carif-oref/carif-oref-mayotte" target="_blank"> CARIF-OREF 976.</a>
+                    <br> <br> <br>
+                    <span id="currentyear"></span></p>
             <!-- Tous droits réservés -->
     </footer>
             </div>

@@ -24,7 +24,7 @@ function diff (currentYear, birthYear) {
 
 // STOP RESET
 document.querySelector("#bouton").addEventListener("click", function(event) {
-    // Empêche le bouton de faire quoi que ce soit d'autre
+    // Empêche réinitialisation
     event.preventDefault();
     
 });
@@ -69,7 +69,6 @@ elementValider.addEventListener ("click", () => {
     //Situation
     const elementPro = document.querySelectorAll('input[name="situation"]');
     console.log(elementPro);
-
     let checked;
     for (let i = 0; i < elementPro.length ; i++) {
 
